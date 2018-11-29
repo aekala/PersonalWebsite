@@ -1,0 +1,100 @@
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1870px;
+}
+
+.top-bar {
+    background-color: #D98719;
+    margin-top: 30px;
+    margin-left: 9px;
+    padding:25px;
+    margin-bottom:5px;
+    /* border: 5px solid black; */
+    width: 94%;
+}
+
+#boxAndLogo {
+    background-color: #D98719; 
+    width: 12%;
+    margin-left: 9px;
+}
+
+#gif {
+    width: 75%;
+    height: 95%;
+    margin-left: 10%;
+    border: 3px solid black;
+}
+
+#boxForName {
+    background-color: #F5CCB0;
+    width: 84.4%;
+    margin-left: 5px;
+    padding-left: 25px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    border: 3px solid black;
+} 
+
+#largename {
+    font-size: 60px;
+    text-align:left;
+    line-height: 0;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height:110px;
+    box-sizing: border-box;
+    /* border: 5px solid black; */
+}
+
+.photobox {
+    /* border: 5px solid black; */
+    box-sizing: border-box;
+}
+
+#profilephoto {
+    width: 30%;
+    height: 30%;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.sidebarbox {
+    /* border: 5px solid black; */
+    box-sizing: border-box;
+    height: 1000px;
+    width: 12%;
+    background-color: #F5CCB0;
+    float: left;
+    margin-top: 5px;
+    margin-left: 9px;
+}
+
+.contentbox {
+    /* border: 5px solid black; */
+    box-sizing: border-box;
+    height: 1000px;
+    width: 84.4%;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;;
+}
+
+.introtext {
+    font-size: 22px;
+}
+
+#tableofcontents li {
+    font-size: 30px;
+    text-decoration: underline;
+    padding-top: 30px;
+    color: blue;
+}
+
+
