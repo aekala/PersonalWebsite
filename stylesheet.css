@@ -41,6 +41,7 @@
     font-size: 60px;
     text-align:left;
     line-height: 0;
+    font-family:Arial;
 }
 
 .column {
@@ -83,11 +84,13 @@
     width: 84.4%;
     float: left;
     margin-top: 5px;
-    margin-left: 5px;;
+    margin-left: 5px;
+    background: url("seigaiha.PNG");
 }
 
 .introtext {
     font-size: 22px;
+    font-family: Arial;
 }
 
 #tableofcontents li {

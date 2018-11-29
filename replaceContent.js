@@ -31,9 +31,10 @@ function changeToInfo() {
     var info = document.createElement("p");
     info.setAttribute("class", "introtext");
     //text node for info
-    var textArgs = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere lacinia ex sed sagittis. Nunc a sodales ipsum, a tristique leo. In ac odio luctus, commodo ex quis, molestie elit. In dignissim mattis mauris id lacinia. Sed fermentum nibh ut eros rutrum, ut sodales lorem blandit. Nunc interdum, urna eget vestibulum bibendum, arcu turpis iaculis ex, id posuere ipsum lacus sit amet massa.",
-                    "Integer facilisis bibendum nunc vitae blandit. Suspendisse eu feugiat tortor, sed egestas mauris. Praesent et sollicitudin ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras quis dui quis arcu auctor aliquam. Quisque vehicula, massa at venenatis fringilla, odio diam ultricies ex, vel gravida dui enim at leo. Proin enim magna, dignissim eget ipsum nec, venenatis sodales elit.",
-                    "Praesent dui tortor, euismod eget massa at, tincidunt rhoncus turpis. Proin elementum tellus id odio dictum consectetur. Fusce tempus faucibus turpis. Ut vitae ipsum ante. Cras tempus auctor vulputate. Nunc at imperdiet ante. Curabitur mauris mauris, maximus at ipsum sed, molestie finibus enim. Aliquam molestie quam eu elementum vehicula. Phasellus sed lacinia nibh, vel gravida ex. Phasellus imperdiet lectus eget pellentesque pellentesque. Donec rhoncus tincidunt ex, at ultrices ex congue vitae. Aliquam tellus nisi, elementum quis maximus vitae, volutpat id leo. Proin congue tristique nunc vel faucibus. Maecenas a mattis sem."
+    var textArgs = ["Hi, I'm Leo Kodish and welcome to my website! I designed this website as a place to host information about me as well as " + 
+    "links to professional websites and my portfolios.", "On the sidebar to the left you can find links to my resume and Github if you want to see " +
+    "my experience and code for projects I've built.", "You can also click on the Contact section or check out my LinkedIn if you wish to get in contact " +
+    "with me or have questions. I coded this website from scratch and the code is available to see on Github under the \"Homepage\" repository!"
     ];
 
     //append text and line breaks 
@@ -46,14 +47,45 @@ function changeToInfo() {
     contentBox.appendChild(info);
 }
 
+function changeToContact() {
+    var contentBox = document.getElementById("maincontent");
+    // clear the content box
+    while(contentBox.firstChild) {
+        contentBox.removeChild(contentBox.firstChild);
+    }
+
+    //create contact element and insert into the content box
+    var info = document.createElement("p");
+    info.setAttribute("class", "introtext");
+    //text node for info
+    var textArgs = ["Email: kodish.15@osu.edu", "Address: 1952 Iuka Ave, Columbus, OH, 43201", "LinkedIn: https://www.linkedin.com/in/leo-kodish-b83aa712b"
+    ];
+
+    for (var j = 0; j < textArgs.length; j++) {
+        if (j != 2) {
+            var textNode = document.createTextNode(textArgs[j]);
+            info.appendChild(textNode);
+            info.appendChild(document.createElement("br"));
+            info.appendChild(document.createElement("br"));
+        } else {
+            var textPart = document.createTextNode(textArgs[j].substring(0, 10));      //hyperlink for LinkedIn page
+            info.appendChild(textPart);
+            var linkNode = document.createElement("A");
+            var linkPart = document.createTextNode(textArgs[j].substring(10));
+            linkNode.setAttribute("href", textArgs[j].substring(10));
+            linkNode.appendChild(linkPart);
+            info.appendChild(linkNode);
+            info.appendChild(document.createElement("br"));
+            info.appendChild(document.createElement("br"));
+        }
+    }
+    contentBox.appendChild(info);
+}
+
 //jQuery to call corressponding function to change content box on sidebar click
 $(document).ready(function () {
     $("#resumelink").on("click", changeToResume);
     $("#infolink").on("click", changeToInfo);
-    $.get("https://leokodish.github.io/", function(data, status) {      // //jQuery to retrive POST requests made to the webiste, used for Dialogflow fulfillment
-        var leoBirthday = new Date("Febuary 14, 1998");
-        var currentDate = new Date();
-        console.log(leoBirthday);
-    });
+    $("#contactinfo").on("click", changeToContact);
 });
 
