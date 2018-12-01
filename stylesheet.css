@@ -5,18 +5,29 @@
 }
 
 .top-bar {
-    background-color: #D98719;
-    margin-top: 30px;
+    background: repeating-linear-gradient(
+        45deg,
+        #606dbc,
+        #606dbc 10px,
+        #465298 10px,
+        #465298 20px
+      );
     margin-left: 9px;
     padding:25px;
     margin-bottom:5px;
     /* border: 5px solid black; */
     width: 94%;
+    
 }
 
 #boxAndLogo {
-    background-color: #D98719; 
-    width: 12%;
+    background: repeating-linear-gradient(
+        45deg,
+        #606dbc,
+        #606dbc 10px,
+        #465298 10px,
+        #465298 20px
+      );    width: 12%;
     margin-left: 9px;
 }
 
@@ -24,11 +35,11 @@
     width: 75%;
     height: 95%;
     margin-left: 10%;
-    border: 3px solid black;
+    border: 2px solid black;
 }
 
 #boxForName {
-    background-color: #F5CCB0;
+    background-color:#606dbc;   
     width: 84.4%;
     margin-left: 5px;
     padding-left: 25px;
@@ -71,7 +82,7 @@
     box-sizing: border-box;
     height: 1000px;
     width: 12%;
-    background-color: #F5CCB0;
+    background-color:#F5CCB0;   
     float: left;
     margin-top: 5px;
     margin-left: 9px;
@@ -91,13 +102,18 @@
 .introtext {
     font-size: 22px;
     font-family: Arial;
+    
 }
 
 #tableofcontents li {
     font-size: 30px;
     text-decoration: underline;
     padding-top: 30px;
-    color: blue;
+    color: black;
 }
 
-
+.textbox {
+    margin-left:15%;
+    margin-right:15%;
+    margin-top: 5%;
+}
