@@ -1,34 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 1870px;
-}
-
-.top-bar {
-    background: repeating-linear-gradient(
-        45deg,
-        #606dbc,
-        #606dbc 10px,
-        #465298 10px,
-        #465298 20px
-      );
-    margin-left: 9px;
-    padding:25px;
-    margin-bottom:5px;
-    /* border: 5px solid black; */
-    width: 94%;
-    
 }
 
 #boxAndLogo {
-    background: repeating-linear-gradient(
-        45deg,
-        #606dbc,
-        #606dbc 10px,
-        #465298 10px,
-        #465298 20px
-      );    width: 12%;
-    margin-left: 9px;
+    background-color: #1d5464;
+    width: 17%;
+    margin-left: 0.5%;
+    border-radius: 10px;
 }
 
 #gif {
@@ -39,32 +22,31 @@
 }
 
 #boxForName {
-    background-color:#606dbc;   
-    width: 84.4%;
-    margin-left: 5px;
+    background-color:#1d5464;   
+    width: 82%;
+    margin-left: 0.5%;
     padding-left: 25px;
     padding-bottom: 50px;
     box-sizing: border-box;
-    border: 3px solid black;
+    border-radius: 10px;
 } 
 
 #largename {
-    font-size: 60px;
+    font-size: 90px;
     text-align:left;
-    line-height: 0;
-    font-family:Arial;
+    line-height: 20px;
+    font-family: 'Noto-Sans', sans-serif;
+    color: #facf5a;
 }
 
 .column {
     float: left;
     padding: 10px;
-    height:110px;
+    height:165px;
     box-sizing: border-box;
-    /* border: 5px solid black; */
 }
 
 .photobox {
-    /* border: 5px solid black; */
     box-sizing: border-box;
 }
 
@@ -78,42 +60,64 @@
 }
 
 .sidebarbox {
-    /* border: 5px solid black; */
     box-sizing: border-box;
     height: 1000px;
-    width: 12%;
-    background-color:#F5CCB0;   
+    width: 17%;
+    background-color: #1d5464;   
     float: left;
     margin-top: 5px;
-    margin-left: 9px;
+    margin-left: 0.5%;
+    border-radius: 10px;
 }
 
 .contentbox {
-    /* border: 5px solid black; */
     box-sizing: border-box;
     height: 1000px;
-    width: 84.4%;
+    width: 82%;
     float: left;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 0.5%;
     background: url("seigaiha.PNG");
+    border-radius: 10px;
+    border: 10px #1d5464 solid;
 }
 
 .introtext {
     font-size: 22px;
-    font-family: Arial;
-    
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 3%; 
 }
 
 #tableofcontents li {
     font-size: 30px;
-    text-decoration: underline;
     padding-top: 30px;
     color: black;
+    margin-left: 14%;
+    font-family: 'Noto-Sans', sans-serif;
+    color: #facf5a;
 }
 
-.textbox {
-    margin-left:15%;
-    margin-right:15%;
-    margin-top: 5%;
+#tableofcontents li a {
+    color: #facf5a;
 }
+
+#tableofcontents li a:link {
+    text-decoration: none;    
+}
+
+#tableofcontents li a:hover {
+    text-decoration: underline;    
+}
+
+#tableofcontents li a:active {
+    text-decoration: none;  
+}
+
+#tableofcontents li a[href*="http"] {
+  background: url('https://mdn.mozillademos.org/files/12982/external-link-52.png') no-repeat 100%;
+  background-size: 16px 16px;
+  padding-right: 20px;
+}
+

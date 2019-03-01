@@ -8,7 +8,7 @@ function changeToResume() {
     //create resume element and insert into the content box
     var resume = document.createElement("embed");
     resume.setAttribute("type", "application/pdf");
-    resume.setAttribute("src", "Leo Kodish Resume 2018.pdf#zoom=175");
+    resume.setAttribute("src", "Leo Kodish Resume 2019.pdf#zoom=125");
     resume.setAttribute("width", "100%");
     resume.setAttribute("height", "1000px");
     contentBox.appendChild(resume);
@@ -29,7 +29,7 @@ function changeToInfo() {
 
     //create info element and insert into the content box
     var info = document.createElement("p");
-    info.setAttribute("class", "introtext");
+    info.setAttribute("class", "introtext"); 
     //text node for info
     var textArgs = ["Hi, I'm Leo Kodish and welcome to my website! I designed this website as a place to host information about me as well as " + 
     "links to professional websites and my portfolios.", "On the sidebar to the left you can find links to my resume and Github if you want to see " +
