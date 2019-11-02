@@ -2,17 +2,21 @@ html {
     background-color: cornflowerblue;
 }
 
+#container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 #carousel {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 9%;
     background-image: linear-gradient(cornflowerblue, silver, cornflowerblue); 
-    border: 2px solid #000000;
     height: 500px;
 }
 
 .profile-pic {
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 37%;
+    max-height: 37%;
     border-radius: 20%;
     padding-bottom: 10px;
 }
@@ -23,17 +27,54 @@ html {
 }
 
 .logo-container img {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
 }
 
 .logo-container.top {
-    padding-left: 100px;
-    padding-right: 100px
+    padding-left: 200px;
+    padding-right: 200px
 }
 
 .logo-container.bottom {
+    padding-left: 380px;
+    padding-right: 380px;
+}
+
+.logo-container.companies {
     padding-left: 300px;
     padding-right: 300px;
+    padding-top: 100px;
 }
+
+.osuinfo {
+    padding-top: 3%;
+}
+
+.osuinfo p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.osu-logo {
+    max-width: 6%;
+    max-height: 6%;
+}
+
+.punahouinfo {
+    padding-top: 2%;
+}
+
+.punahouinfo p {
+    display: inline-block;
+    padding-top: 50px;
+}
+
+.punahou-logo {
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
 

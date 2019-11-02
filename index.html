@@ -8,47 +8,66 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-            <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active profile">
-                        <img class="profile-pic" src="./assets/Profile Photo.JPG">
-                        <h1> Leo Kodish, Software Engineer </h1>
-                    </div>
-                    <div class="carousel-item">
-                        <h1>Education</h1> 
-                        <p> B.S. Computer Science & Engineering, 3.45 GPA</p>
-                        <p> Ohio State University </p>
-                        <img class="html5-logo" src="./assets/osu.png">
-                    </div>
-                    <div class="carousel-item">
-                            <h1>Technologies</h1> 
-                            <div class="logo-container top"> 
-                                <img class="html5-logo" src="./assets/html5.png">
-                                <img class="css3-logo" src="./assets/css3.png">
-                                <img class="node-logo" src="./assets/nodejs.png">
-                                <img class="js-logo" src="./assets/javascript.png">
+        <div class="container-fluid" id="container-fluid"> 
+            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active profile">
+                            <img class="profile-pic" src="./assets/Profile Photo.JPG">
+                            <h1> Leo Kodish, Software Engineer </h1>
+                        </div>
+                        <div class="carousel-item">
+                            <h1>Education</h1> 
+                            <div class="osuinfo">
+                                <img class="osu-logo" src="./assets/osu.png">
+                                <p><b>The Ohio State University</b>, Columbus, OH <br> B.S. Computer Science & Engineering, 2020</p>
                             </div>
-                            <div class="logo-container bottom">
-                                    <img class="react-logo" src="./assets/nodejs.png">
-                                    <img class="java-logo" src="./assets/java.png">
-                                    <img class="mysql-logo" src="./assets/react.png">
+                            <div class="punahouinfo">
+                                <img class="punahou-logo" src="./assets/punahou.png">
+                                <p><b>Punahou School</b>, Honolulu, HI, Class of 2016</b></p>
                             </div>
-                    </div>
-                    <div class="carousel-item">
-                            <h1>Work Experience</h1> 
-                            <img class="liberty-logo" src="./assets/libertymutual.jpg">
-                            <img class="qualifit-logo" src="./assets/qualifit.png">
-                            <img class="datahouse-logo" src="./assets/datahouse.jpg">
-                    </div>
+                        </div>
+                        <div class="carousel-item">
+                                <h1>Technologies</h1> 
+                                <div class="logo-container top"> 
+                                    <img class="html5-logo" src="./assets/html5.png">
+                                    <img class="css3-logo" src="./assets/css3.png">
+                                    <img class="node-logo" src="./assets/nodejs.png">
+                                    <img class="js-logo" src="./assets/javascript.png">
+                                </div>
+                                <div class="logo-container bottom">
+                                        <img class="react-logo" src="./assets/nodejs.png">
+                                        <img class="java-logo" src="./assets/java.png">
+                                        <img class="mysql-logo" src="./assets/react.png">
+                                </div>
+                        </div>
+                        <div class="carousel-item">
+                                <h1>Work Experience</h1> 
+                                <div class="logo-container companies">
+                                    <img class="liberty-logo" src="./assets/libertymutual.jpg" 
+                                        data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Delivered a rewrite of an existing full-stack application to source Bitbucket data and repository settings data using event-driven programming and
+                                        making that data accessible through a single-page application.">
+                                    <img class="qualifit-logo" src="./assets/qualifit.png"
+                                        data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Developed a program to retrieve and parse client information written in both English and Hebrew from resumes sent via Gmail.">
+                                    <img class="datahouse-logo" src="./assets/datahouse.jpg"
+                                        data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Developed chatbots using Google’s Dialogflow platform and pitched them in presentations to local Hawaii companies.">
+                                </div>
+                        </div>
+                </div>
+                <a class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
             </div>
-            <a class="carousel-control-prev" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
