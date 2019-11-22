@@ -48,6 +48,10 @@ html {
     color: #0D090B;
 }
 
+.fa-envelope {
+    width: 500px;
+}
+
 .logo-container {
     display: flex;
     justify-content: space-between;
@@ -136,6 +140,7 @@ html {
     }
 
     .slide-title {
+        font-size: 32px;
         padding-bottom: 50px;
     }
 
